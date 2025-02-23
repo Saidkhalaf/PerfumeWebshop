@@ -1,0 +1,79 @@
+.afbeeldingen{
+    display: grid; /* Definieert een grid container */
+    grid-template-areas:
+            "afbeelding kleinAfbeeldingen";
+margin: 15px; /* Buitenmarge rondom het grid */
+padding: 15px; /* Binnenruimte van het grid */
+}
+
+.kleinAfbeeldingen{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+img{
+    margin: 5px; /* Marge rondom de afbeelding */
+padding: 5px; /* Binnenruimte van de afbeelding */
+}
+
+/* Stijl voor de inhoud van de pagina */
+.content{
+display: grid; /* Definieert een grid container */
+margin: 15px; /* Buitenmarge rondom de inhoud */
+padding: 15px; /* Binnenruimte van de inhoud */
+}
+
+#reviews{
+    display: grid;
+    grid-template-areas: "review1 review2 review3";
+}
+#review1{
+    grid-area: review1;
+}
+#review2{
+    grid-area: review2;
+}
+#review3{
+    grid-area: review3;
+}
+
+.rating{
+    font-size: 56px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.rating::after {
+    content: "\2605\2605\2605\2605\2606"; /* Vijf sterren waarvan er één leeg is */
+    font-size: 56px;
+    color: gold; /* Verander de kleur van de sterren naar wens */
+}
+
+.rating[data-rating="1"]::after {
+    content: "\2605\2606\2606\2606\2606"; /* Één ster */
+}
+
+.rating[data-rating="2"]::after {
+    content: "\2605\2605\2606\2606\2606"; /* Twee sterren */
+}
+
+.rating[data-rating="3"]::after {
+    content: "\2605\2605\2605\2606\2606"; /* Drie sterren */
+}
+
+.rating[data-rating="4"]::after {
+    content: "\2605\2605\2605\2605\2606"; /* Vier sterren */
+}
+
+.rating[data-rating="5"]::after {
+    content: "\2605\2605\2605\2605\2605"; /* Vijf sterren */
+}
+
+
+
+
+
+
+
+
+

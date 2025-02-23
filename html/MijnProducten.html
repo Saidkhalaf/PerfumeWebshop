@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/producten.css">
+    <link rel="stylesheet" href="../css/sorteren.css">
+    <script src="../java-script/filteren.js" defer></script>
+    <script src="../java-script/sorteren.js" defer></script>
+
+    <title>MijnProducten</title>
+</head>
+<body>
+
+
+<header>
+    <h1>Onze Producten</h1>
+
+    <nav>
+        <h2 class="hidden"> Menu </h2>
+        <ul class="mainMenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="current" href="MijnProducten.html">Producten</a>
+                <ul class="submenu">
+                    <li><a href="MijnProducten.html#EauDePerfume">Eau de Perfume</a></li>
+                    <li><a href="MijnProducten.html#EauDeToilette">Eau de Toilette</a></li>
+                    <li><a href="MijnProducten.html#EauDeCologne">Eau de Cologne</a></li>
+                </ul>
+            </li>
+            <li><a href="FAQ.html">FAQ</a> </li>
+            <li><a href="Personalisering.html">Personalisering</a> </li>
+            <li><a href="Contact.html">Contact</a> </li>
+        </ul>
+    </nav>
+
+</header>
+
+<input class="hidden" id="dior" name="filter" type="radio" value="dior">
+<input class="hidden" id="azzaro" name="filter" type="radio" value="azzaro">
+<input class="hidden" id="boss" name="filter" type="radio" value="boss">
+<input class="hidden" id="lacoste" name="filter" type="radio" value="lacoste">
+<input class="hidden" id="alle-merken" name="filter" type="radio" value="alle-merken" checked="checked">
+
+
+<main class="main">
+
+    <aside class="filter">
+        <h2 class="hidden">Filters</h2>
+        <ul>
+            <li><label for="dior">Dior</label></li>
+            <li><label for="azzaro">Azzaro</label></li>
+            <li><label for="boss">Boss</label></li>
+            <li><label for="lacoste">Lacoste</label></li>
+            <li><label for="alle-merken">Alle merken</label></li>
+        </ul>
+    </aside>
+
+    <div class="filter-sortering">
+        <div id="filters">
+            <input type="text" id="nameFilter" placeholder="Zoek op naam...">
+            <input type="number" id="minPriceFilter" placeholder="Min prijs..." min="0">
+            <input type="number" id="maxPriceFilter" placeholder="Max prijs..." min="0">
+            <button id="applyFilter">Filter Toepassen</button>
+        </div>
+
+        <div id="sorting">
+            <select id="sortSelect" class="custom-select">
+                <option value="alle-merken">Sorteer op naam/prijs </option>
+                <option value="name-asc">Naam oplopend</option>
+                <option value="name-desc">Naam aflopend</option>
+                <option value="price-asc">Prijs oplopend</option>
+                <option value="price-desc">Prijs aflopend</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <article id="EauDePerfume">
+        <h2 class="categorieTitle">Eau de Perfume :</h2>
+
+        <div class="categorie">
+            <section class="Product alle-merken">
+                <h3>One Million</h3>
+                <a href="ProductDetails1.html">
+                    <img src="../media/Images/OneMillion.png" alt="One Million parfum, 1 Million van Paco Rabanne is een ongekend populaire parfum." ></a>
+                <p class="hidden">1 Million Parfum van Paco Rabanne is een Leerachtige geur voor heren. Dit is een nieuw parfum.
+                    1 Million Parfum werd uitgebracht in 2020. 1 Million Parfum is gecreëerd door Quentin Bisch en Christophe Raynaud.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 100</p>
+            </section>
+
+
+            <section class="Product boss alle-merken">
+                <h3>Boss</h3>
+                <a href="ProductDetails2.html">
+                    <img src="../media/Images/Boss.png" alt="Boss parfum, De Hugo Boss men parfums zijn verleidelijk, elegant en modern."></a>
+                <p class="hidden">BOSS Bottled Parfum, voor dé man, de BOSS. Zijn raffinement is opvallend, zijn warmte inspirerend.
+                    Dit parfum voor mannen heeft een houtachtige, amberachtige geur.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 115.60</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Dolce Gabbana</h3>
+                <a href="ProductDetails3.html">
+                    <img src="../media/Images/Dolce%20Gabbana.png" alt="eau de parfum The One For Men van dolce&gabbana is een oosterse signatuur voor mannen."></a>
+                <p class="hidden">Deze intense geur is mannelijk en aantrekkelijk,
+                    een statement van charisma en raffinement. Levendig en elegant.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 150</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>212 Herrera</h3>
+                <img src="../media/Images/212%20Herrera.png" alt="212 eau de perfume van Carolina Herrera , een kosmopolitische instelling met sensuele elegantie.">
+                <p class="hidden">212 van Carolina Herrera is een bloemige, houtachtige musk-geur voor vrouwen.
+                    212 werd gelanceerd in 1997. De neus achter deze geur is Alberto Morillas.
+                    Topnoten zijn Oranjebloesem, Cactusbloem, Bergamot en Mandarijn; hartnoten zijn Lelie,
+                    Freesia, Gardenia, Witte Camelia, Jasmijn, Lelietje-van-dalen, Roos en Pioenroos;
+                    Basisnoten zijn Muskus en Sandelhout.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 100</p>
+            </section>
+
+            <section class="Product dior alle-merken">
+                <h3>Dior Homme </h3>
+                <img src="../media/Images/Dior%20Homme.png" class="dior alle-merken" alt="eau de parfum The One For Men van DIOR HOMME ORIGINAL is een oosterse signatuur voor mannen.">
+                <p class="hidden">Dior Homme is een zeer aangename warme en poederige geur, die niet alleen geschikt is voor heren.
+                    Hij opent met lavendel en bergamot, maar meteen daarna ruik je de poederige iris op een warme ondergrond.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 170</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Calvin Klein </h3>
+                <img src="../media/Images/calvin%20Klein.png" alt="eau de parfum The One For Men van Calvin Klein ORIGINAL is een oosterse signatuur voor mannen.">
+                <p class="hidden"> Calvin Klein Inc. (vaak afgekort tot Calvin Klein) is een designmodebedrijf dat in 1968 werd opgericht
+                    door de Amerikaanse modeontwerper Calvin Richard Klein.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 75</p>
+            </section>
+
+            <section class="Product lacoste alle-merken">
+                <h3>Lacoste Blue</h3>
+                <img src="../media/Images/BlueLacoste.png" alt="eau de parfum The One For Men Lacoste Blue Een intense en krachtige geur voor mannen.">
+                <p class="hidden"> Blue Lacoste is een intense en krachtige geur voor mannen. Top: Pepermunt , Roze,
+                    Pompelmoes. Midden: Aromatische salie, Toetsen van oranjebloesem.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 60</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Villain </h3>
+                <img src="../media/Images/Vallain.png" alt="eau de parfum The One For Men Villain Een intense en krachtige geur voor mannen.">
+                <p class="hidden"> Villain Snake Perfume for Men 100ml | Ultra Long Lasting | Musk | Strong, Smoky, Sexy and Masculine| Premium EAU DE PARFUM|
+                    Best Gift for BoyfriendVillain Snake Perfume for Men 100ml | Ultra Long Lasting | Musk | Strong, Smoky, Sexy and Masculine|
+                    Premium EAU DE PARFUM| Best Gift for Boyfriend</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 45</p>
+            </section>
+        </div>
+
+    </article>
+
+
+    <article id="EauDeToilette">
+        <h2 class="categorieTitle">Eau de Toilette :</h2>
+
+        <div class="categorie">
+            <section class="Product alle-merken">
+                <h3>Blue De Chanel</h3>
+                <img src="../media/Images/BlueDeChanel.png" alt="Blue De Channel parfum, BLEU DE CHANEL Parfum is een intens houtachtig aromatisch parfum.">
+                <p class="hidden">BLEU DE CHANEL Parfum is een intens houtachtig aromatisch parfum.
+                    Het opent met frisheid en zet zich voort met een kostbaar akkoord dat wordt verlicht door sandelhout
+                    uit Nieuw-Caledonië.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 110</p>
+            </section>
+
+            <section class="Product azzaro alle-merken">
+                <h3>Azzaro Chrome</h3>
+                <img src="../media/Images/azzaro.png" class="azzaro alle-merken" alt="Azzaro parfum, Chrome van Azzaro is een Citrus Aromatische geur voor heren.">
+                <p class="hidden">Een herenparfum met verkwikkende, rustgevende frisse akkoorden om even bij te ontsnappen; een zachte,
+                    aangename frisheid van citrus- en muskusnoten, gecombineerd met aquatische en groene noten met
+                    het comfort van een houtachtig thee-akkoord van sandelhout, amber, mateblad.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 130</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Paco Rabanne</h3>
+                <img src="../media/Images/PacoRabanne.png" alt="Paco Rabanne Lady Million 100 ml Eau de toilette Cadeauset">
+                <p class="hidden"> Paco Rabanne het Eau de Toilette voor de femme-fatale die een geur draagt om te verleiden. Zij die lust voor het leven en leeft voor de achtervolging.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 90</p>
+            </section>
+
+            <section class="Product lacoste alle-merken">
+                <h3>Lacoste Pink</h3>
+                <img src="../media/Images/PinkLacoste.png" alt="Lacoste Pink door Ralph Lauren. Dit fenomenale parfum is geïntroduceerd door Ralph Lauren in 2005.">
+                <p class="hidden">  Lacoste Pink Blanc Eau De toilette is geïnspireerd op het iconische poloshirt en is een uiting van zelfverzekerde en soepele mannelijkheid.
+                    Vind de regels van het spel opnieuw uit met de frisheid van dit houtachtige, bloemrijke parfum.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 80</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Armani</h3>
+                <img src="../media/Images/Armani.png" alt="Armani parfum is een Citrus Aromatische geur voor heren.">
+                <p class="hidden"> Armani Eau de Toilette is geïnspireerd op tijdloze mannelijkheid. Een mannengeur met een natuurlijke,
+                    sprankelende mix van Japanse yuzu, salie en kardemom die een harmonie vormen met salie noten.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 70</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Polo Black</h3>
+                <img src="../media/Images/PoloBlack.png" alt="Polo Black door Ralph Lauren. Dit fenomenale parfum is geïntroduceerd door Ralph Lauren in 2005.">
+                <p class="hidden"> Polo Black van Ralph Lauren, een houtachtige, aromatische geur.
+                    Deze moderne, gedurfde geur is een gewaagde mix van iced mango, zilverkleurige klei en zwarte patchouli.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 45</p>
+            </section>
+
+            <section class="Product lacoste alle-merken">
+                <h3>Lacoste White</h3>
+                <img src="../media/Images/witLacoste.png" alt="Lacoste White door Ralph Lauren. Dit fenomenale parfum is geïntroduceerd door Ralph Lauren in 2005.">
+                <p class="hidden">  Lacoste White Blanc Eau De toilette is geïnspireerd op het iconische poloshirt en is een uiting van zelfverzekerde en soepele mannelijkheid.
+                    Vind de regels van het spel opnieuw uit met de frisheid van dit houtachtige, bloemrijke parfum.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 85</p>
+            </section>
+        </div>
+    </article>
+
+
+    <article id="EauDeCologne">
+        <h2 class="categorieTitle">Eau de Cologne :</h2>
+
+        <div class="categorie">
+            <section class="Product alle-merken">
+                <h3>Apsley</h3>
+                <img src="../media/Images/Apsley.png" alt="Apsley parfum, Het is een unieke en verfijnde mix van grapefruit, citroen en peper, ondersteund door een hart van lavendel. ">
+                <p class="hidden">Apsley is het hart van cederhout en patchouli,
+                    verrijkt met sensuele musk-tonen vormen een aantrekkelijke basis voor deze fascinerende geur.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 35</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Adidas</h3>
+                <img src="../media/Images/AdidasCologne.png" alt="Adidas perfum, Het is een unieke en verfijnde mix van grapefruit, citroen en peper, ondersteund door een hart van lavendel. ">
+                <p class="hidden">Adidas Classic Blue van Adidas is een Aromatische Fougere geur voor heren. Topnoten zijn Lavendel, Bergamot, Citroen en Mandarijn;
+                    hartnoten zijn Roos, Cyclamen, Jeneverstruik,
+                    Jasmijn, Petitgrain olie (stengels en blaadjes) en Geranium; Basisnoten zijn Muskus, mos, Ceder, Vetiver en Amber.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 25</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Fehrenheit</h3>
+                <img src="../media/Images/FahrenhietCologne.png" alt="Fahrenheit Parfum, de nieuwe intensiteit. Een harmonie van contrast">
+                <p class="hidden">Fahrenheit parfum, de nieuwe intensiteit. Een geur gebaseerd op contrasten, een harmonie van kracht en elegantie.
+                    De florale noten blijven ingetogen en tegelijkertijd krachten ze een nieuwe rijkheid aan, dankzij de viooltjes absolue die zacht is, verrijkt met rum absolues.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 35</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Souvage Cologne</h3>
+                <img src="../media/Images/SouvageCologne.png" alt="Sauvage Eau de Cologne werd uitgebracht in 2018. De Parfumeur achter dit parfum is Francois Demachy.">
+                <p class="hidden">Souvage Cologne is een creatie geïnspireerd door wijd open vlaktes.
+                    Een ozonblauwe lucht boven een rotsachtig landschap, witgloeiend onder de woestijnzon.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 70</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Diadora</h3>
+                <img src="../media/Images/DiadoraCologne.png" alt="Diadora Eau de Cologne werd uitgebracht in 2018. De Parfumeur achter dit parfum is Francois Demachy.">
+                <p class="hidden">Diadora for man energy fragrance, eau de cologne 100ml spray.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 45</p>
+            </section>
+
+            <section class="Product alle-merken">
+                <h3>Atelier</h3>
+                <img src="../media/Images/Atelier.png" alt="Atelier parfum, Ontdek een nieuwe dimensie van geur en laat je verrassen door de verfijnde en betoverende parfums van Atelier.">
+                <p class="hidden">Atelier Cologne Gold Leather Vaporisateur Natural Spray. Deze parfum voor mannen en vrouwen heeft
+                    een warme geur met noten van bittere sinaasappel uit Sevilla, Indiase saffraan,
+                    Jamaicaanse rum, pruimen uit India en eucalyptus uit Californie.</p>
+                <ul class="variant-list">
+                    <li class="variant">50 ml</li>
+                    <li class="variant"> 100 ml</li>
+                    <li class="variant"> 150 ml</li>
+                </ul>
+                <p class="product-price">€ 30</p>
+            </section>
+        </div>
+    </article>
+</main>
+
+
+<footer>
+    <p>&copy; 2023 ParfumWebShop.be</p>
+</footer>
+
+
+</body>
+</html>

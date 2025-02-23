@@ -1,0 +1,133 @@
+/* Style voor veelgestelde vragen sectie */
+.faq {
+display: grid; /* stelt het weergavetype van de sectie in op grid */
+padding: 20px; /* voegt padding toe aan de sectie */
+background-color: wheat; /* stelt de achtergrondkleur in op wheat */
+box-shadow: 0px 0px 30px #888888; /* voegt een doos schaduw toe aan de sectie */
+border-radius: 10px; /* rondt de randen van de sectie af */
+margin: 100px 200px 100px 200px; /* stelt de marges in van de sectie */
+padding: 10px; /* voegt padding toe aan de sectie */
+}
+
+/* Style voor de sectie Klantenservice */
+section {
+padding: 20px; /* voegt padding toe aan de sectie */
+background-color: #f5f5f5; /* stelt de achtergrondkleur in op lichtgrijs */
+border-radius: 10px; /* rondt de randen van de sectie af */
+margin: 40px 0; /* stelt de marges in van de sectie */
+}
+
+/* Style voor het kopje van de Klantenservice sectie */
+#klantenService h2 {
+font-size: 36px; /* stelt de lettergrootte in op 36px */
+margin-bottom: 20px; /* voegt marge onder het kopje toe */
+text-align: center; /* centreert de tekst */
+}
+
+/* Style voor de paragrafen binnen de sectie */
+section p {
+font-size: 18px; /* stelt de lettergrootte in op 18px */
+margin-bottom: 20px; /* voegt marge onder de paragrafen toe */
+text-align: center; /* centreert de tekst */
+}
+
+/* Styling voor het navigatiemenu */
+nav {
+    display: flex; /* Maakt het menu flexibel */
+    flex-direction: column; /* Plaatst items in een kolom */
+    justify-content: center; /* Items worden verticaal gecentreerd */
+    align-items: center; /* Items worden horizontaal gecentreerd */
+    text-align: left; /* Tekst links uitlijnen */
+    background-color: #f2f2f2; /* Achtergrondkleur */
+    padding: 20px; /* Ruimte binnenin het menu */
+    box-shadow: 0px 0px 30px #888888; /* Schaduw rondom het menu */
+    border-radius: 10px; /* Afgeronde hoeken */
+    margin: 40px 100px 40px 100px; /* Ruimte tussen menu en ander element */
+}
+
+/* Styling voor de titel van het navigatiemenu */
+nav h2 {
+    font-size: 24px; /* Grootte van de tekst */
+    margin-bottom: 20px; /* Ruimte onder de titel */
+}
+
+/* Styling voor de lijst in het navigatiemenu */
+nav ul {
+    list-style: none; /* Verwijdert de lijststijl */
+    margin: 0; /* Verwijdert de standaardmarge */
+    padding: 0; /* Verwijdert de standaardruimte */
+}
+
+/* Styling voor elk item in het navigatiemenu */
+nav li {
+    margin-bottom: 10px; /* Ruimte tussen de items */
+}
+
+/* Styling voor elke link in het navigatiemenu */
+nav a {
+    display: block; /* Maakt de link een blok-element */
+    font-size: 18px; /* Grootte van de tekst */
+    color: #333; /* Tekstkleur */
+    text-decoration: none; /* Verwijdert de standaardonderstreping */
+    padding: 10px; /* Ruimte rondom de tekst */
+    border-radius: 5px; /* Afgeronde hoeken */
+    transition: background-color 0.3s ease; /* Animatie bij hover */
+}
+
+/* Styling voor de link in het navigatiemenu wanneer eroverheen wordt gehoverd */
+nav a:hover {
+    background-color: #ccc; /* Achtergrondkleur verandert bij hover */
+}
+
+/* Set styles for the <article> element */
+article {
+    background-color: #f7f7f7; /* set the background color */
+    border: 1px solid #ccc; /* set the border */
+    border-radius: 5px; /* set the border radius */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* set the box shadow */
+    margin-bottom: 20px; /* set the bottom margin */
+    padding: 20px; /* set the padding */
+}
+
+/* Set styles for the <h3> element within the <article> element */
+article h3 {
+    color: #333; /* set the text color */
+    font-size: 24px; /* set the font size */
+    font-weight: bold; /* set the font weight to bold */
+    margin-bottom: 10px; /* set the bottom margin */
+}
+
+/* Set styles for the <details> element within the <article> element */
+article details {
+    margin-top: 10px; /* set the top margin */
+}
+
+/* Set styles for the <details> element within the <article> element when it is open */
+article details[open] {
+    height: auto; /* set the height to auto */
+}
+
+/* Set styles for the <summary> element within the <article> element */
+article summary {
+    cursor: pointer; /* change the cursor to a pointer */
+    font-weight: bold; /* set the font weight to bold */
+}
+
+/* Set styles for the <p> element within the <article> element */
+article p {
+    color: #666; /* set the text color */
+    margin-top: 10px; /* set the top margin */
+    margin-bottom: 10px; /* set the bottom margin */
+}
+
+/* Set styles for the <ol> element within the <article> element */
+article ol {
+    margin-top: 10px; /* set the top margin */
+    margin-left: 20px; /* set the left margin */
+}
+
+/* Set styles for the <li> element within the <article> element */
+article li {
+    margin-bottom: 5px; /* set the bottom margin */
+}
+

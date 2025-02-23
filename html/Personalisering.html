@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/personalisering.css">
+    <script defer src="../java-script/dyn_data.js"></script>
+    <script src="../java-script/form_validation.js" defer></script>
+    <script src="../java-script/dyn_form.js" defer></script>
+    <title>Personalisering - Parfum Webshop</title>
+</head>
+<body>
+
+<h1>Personalisering</h1>
+
+<header>
+
+    <nav>
+        <h2 class="hidden"> Menu </h2>
+        <ul class="mainMenu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="MijnProducten.html">Producten</a>
+                <ul class="submenu">
+                    <li><a href="html/MijnProducten.html#EauDePerfume">Eau de Perfume</a></li>
+                    <li><a href="html/MijnProducten.html#EauDeToilette">Eau de Toilette</a></li>
+                    <li><a href="html/MijnProducten.html#EauDeCologne">Eau de Cologne</a></li>
+                </ul>
+            </li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a class="current" href="Personalisering.html">Personalisering</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+<form action="bevestiging.html" method="get" id="personalisering">
+    <fieldset>
+
+        <legend>Persoonlijk gegevens</legend>
+        <div>
+            <label for="voornaam"> Voer je voornaam in:</label>
+            <input type="text" id="voornaam" name="voornaam" placeholder="bv:Said" minlength="3" maxlength="15" required>
+        </div>
+        <span id="voornaamError" class="error"></span>
+
+        <div>
+            <label for="achternaam"> Voer je achternaam in:</label>
+            <input type="text" id="achternaam" name="achternaam" placeholder="bv:Khalaf" minlength="3" maxlength="15" required>
+        </div>
+        <span id="achternaamError" class="error"></span>
+
+        <div>
+            <label for="telefoonNummer"> Voer je telefoonnummer in:</label>
+            <input type="tel" id="telefoonNummer" name="telefoonNummer" placeholder="bv:0465695753"
+            pattern="^0?[1-9][1-9]{7,8}$" required>
+        </div>
+        <span id="telError" class="error"></span>
+
+        <div>
+            <label for="email"> Voer je email in:</label>
+            <input type="email" id="email" name="email" placeholder="bv:said.khalaf@student.kdg.be" required>
+        </div>
+        <span id="emailError" class="error"></span>
+
+        <div>
+            <label for="leveringsadres">Voer je adres in:</label>
+            <input type="text" id="leveringsadres" name="leveringsadres" placeholder="bv:Nationalstraat 5, 2000 Antwerpen"
+                   required>
+        </div>
+
+        <div>
+            <label for="gemeente"> Voer je gemeente in:</label>
+            <input type="text" id="gemeente" name="gemeente" placeholder="bv:Antwerpen">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Personaliseringsmogelijkheden</legend>
+        <div>
+        <label for="grootte">Grootte</label>
+        <select id="grootte" name="grootte">
+            <option value="50ml">50 ML</option>
+            <option value="100ml">100 ML</option>
+            <option value="150ml">150 ML</option>
+            <option value="300ml">300 ML</option>
+        </select>
+        </div>
+
+        <div>
+        <label for="duurzaamheid">Duurzaamheid</label>
+        <select id="duurzaamheid" name="duurzaamheid">
+            <option value="6 maanden"> 6 maanden </option>
+            <option value="1 jaar"> 1 jaar</option>
+            <option value="1.5 jaar"> 1.5 jaar</option>
+        </select>
+        </div>
+
+        <div>
+        <label for="geur">Geur</label>
+        <select id="geur" name="geur">
+            <option value="bloemige-geur">Bloemige Geur</option>
+            <option value="oriëntaalse-geur">Oriëntaalse Geur</option>
+            <option value="houtachtige-geur">Houtachtige Geur</option>
+            <option value="frisse-geur">Frisse Geur</option>
+        </select>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Jouw Keuze</legend>
+        <div>
+        <label for="categorie">Producten:</label>
+        <select id="categorie" name="categorie"> </select>
+        </div>
+
+        <div>
+        <label for="beschrijving">Beschrijving:</label>
+        <textarea id="beschrijving" placeholder="voeg een tekst in " name="Informatie"></textarea>
+        </div>
+
+    </fieldset>
+    
+        <input type="reset" value="Reset">
+
+    <input type="submit" value="Zenden" id="zending">
+        <span id="zendingError"></span>
+
+
+
+</form>
+</main>
+
+</body>
+</html>

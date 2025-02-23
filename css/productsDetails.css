@@ -1,0 +1,93 @@
+/* De volgende code maakt gebruik van pseudo-elementen om het scheidingsteken "/" tussen
+de lijstitems van een geordende lijst weer te geven.*/
+ol li + li:before {
+content: "\2f"; /* Content geeft het "/" karakter weer */
+margin: 15px; /* Ruimte rondom de "/" scheidingsteken */
+text-align: center; /* Centreren van het scheidingsteken */
+}
+
+/* Stijlen voor de geordende lijst zelf */
+ol {
+padding: 15px; /* Ruimte binnenin de geordende lijst */
+margin: 0 0 25px 0; /* Ruimte rondom de geordende lijst */
+}
+
+/* Stijlen voor elk lijstitem binnen de geordende lijst */
+ol li {
+display: inline; /* Lijstitems worden naast elkaar weergegeven */
+margin: 0 auto; /* Marges links en rechts van elk lijstitem */
+padding: 0; /* Geen padding voor elk lijstitem */
+}
+
+/* De volgende code definieert de stijlen voor een productdetailssectie */
+.product-details {
+display: flex; /* Flexbox-layout wordt gebruikt om de elementen binnen de sectie te rangschikken */
+flex-direction: column; /* De elementen worden verticaal gerangschikt */
+justify-content: space-between; /* Ruimte tussen de elementen wordt verdeeld om de elementen binnen de sectie te centreren */
+align-items: center; /* De elementen worden in het midden van de sectie uitgelijnd */
+padding: 20px; /* Ruimte binnenin de sectie */
+background-color: wheat; /* Achtergrondkleur van de sectie */
+box-shadow: 0px 0px 30px #888888; /* Schaduw rondom de sectie */
+border-radius: 10px; /* Afgeronde hoeken van de sectie */
+margin: 80px; /* Ruimte rondom de sectie */
+padding: 20px; /* Ruimte binnenin de sectie */
+}
+
+/* Stijlen voor afbeeldingen in de productdetailssectie */
+img {
+width: 100%; /* De breedte van de afbeelding wordt aangepast om in de sectie te passen */
+max-width: 500px; /* De maximale breedte van de afbeelding wordt ingesteld op 500 pixels */
+margin-bottom: 20px; /* Ruimte onder de afbeelding */
+}
+
+/* Stijlen voor de producttitel binnen de productdetailssectie */
+.product-title {
+font-size: 32px; /* Grootte van de producttitel */
+margin: 10px 0; /* Ruimte boven en onder de producttitel */
+}
+
+/* Stijlen voor de productbeschrijving binnen de productdetailssectie */
+.product-description {
+font-size: 18px; /* Grootte van de productbeschrijving */
+margin-bottom: 20px; /* Ruimte onder de productbeschrijving */
+}
+
+/* Stijlen voor de producteigenschappen binnen de productdetailssectie */
+.product-Eigenschappen{
+font-size: 18px; /* Grootte van de producteigenschappen */
+margin-bottom: 20px; /* Ruimte onder de producteigenschappen */
+justify-content: left; /* Links uitlijnen van de product */
+}
+
+
+/* Stijl voor de lijst met producteigenschappen */
+.product-features {
+list-style-type: none; /* Verwijderen van de standaard opmaak van de lijst */
+margin: 0; /* Geen marge rondom de lijst */
+padding: 0; /* Geen padding binnen de lijst */
+font-size: 16px; /* Grootte van de tekst van de lijst */
+}
+
+/* Stijl voor de items van de producteigenschappen lijst */
+.product-features li{
+margin: 10px 0; /* Marge boven en onder elk item */
+}
+
+/* Stijl voor de prijs van het product */
+.product-price {
+font-size: 28px; /* Grootte van de tekst van de prijs */
+font-weight: bold; /* Vetgedrukt maken van de prijs */
+color: red; /* Kleur van de prijs */
+margin-bottom: 20px; /* Marge onder de prijs */
+}
+
+/* Stijl voor een grid layout */
+.grid{
+display: grid; /* Definieert een grid container */
+grid-template-columns: 1fr 1fr; /* Definieert twee kolommen in het grid */
+}
+
+/* Stijl voor elementen aan de rechterkant van de grid */
+.grid-right{
+text-align: center; /* Tekst uitlijnen in het midden */
+}

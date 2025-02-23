@@ -1,0 +1,161 @@
+/* Stelt de achtergrondkleur van de gehele pagina in op Peru */
+html{
+    background-color: peru;
+}
+
+/* Header-elementen worden weergegeven als een grid die drie kolommen beslaat zonder tussenruimte */
+header {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-gap: 3px;
+}
+
+/* Kop 1-tekst wordt gecentreerd en zwart gemaakt */
+h1{
+    color: black;
+    text-align: center;
+}
+
+/* Verborgen elementen worden ingesteld om buiten het zichtbare scherm te worden geplaatst, zodat ze niet worden weergegeven */
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
+}
+
+/* Navigatie-elementen binnen de header worden weergegeven als een grid met 15px marges en 15px padding, een 5px dikke wheat gekleurde rand en een achtergrondkleur van darkolivegreen */
+header nav{
+    display: grid;
+    border: 5px solid wheat;
+    margin: 15px;
+    padding: 15px;
+    background-color: darkolivegreen;
+}
+
+
+.mainMenu {
+    list-style-type: none; /* Verwijdert de standaard opsommingstekens van de lijst */
+    margin: 30px 0px 30px 0px;
+    padding: 10px; /* Verwijdert de standaard padding rond de lijst */
+    display: flex; /* Maakt het menu flexibel */
+    align-items: center; /* Centreert de items verticaal binnen het menu */
+    justify-content: center; /* Centreert de items horizontaal binnen het menu */
+}
+
+.mainMenu .current {
+    background-color: #4c86af ;
+    color: white;
+}
+
+.mainMenu li {
+    position: relative; /* Maakt het lijstelement positioneerbaar */
+}
+
+.mainMenu > li {
+    margin: 0 70px; /* Voegt marge toe aan de linker- en rechterkant van elk direct kindlijstelement */
+}
+
+.mainMenu a {
+    display: block; /* Maakt het ankerelement een blokelement */
+    padding: 12px 20px; /* Voegt padding toe binnen het ankerelement */
+    text-decoration: none; /* Verwijdert de onderstreping van het ankerelement */
+    font-size: 18px; /* Stelt de lettergrootte van het ankerelement in */
+    color: #333333; /* Stelt de tekstkleur van het ankerelement in op donkergrijs */
+    background-color: #ffffff; /* Stelt de achtergrondkleur van het ankerelement in op wit */
+    border: 1px solid #cccccc; /* Voegt een grijze rand toe rond het ankerelement */
+    border-radius: 4px; /* Rondt de hoeken van het ankerelement af */
+    transition: background-color 0.3s; /* Voegt een overgangseffect toe aan de achtergrondkleur van het ankerelement */
+}
+
+.mainMenu a:hover, .menu .current a {
+    background-color: #4c86af; /* Verandert de achtergrondkleur van het ankerelement bij hover en het actieve element /
+color: #ffffff; / Verandert de tekstkleur van het ankerelement bij hover en het actieve element */
+}
+
+.submenu {
+    display: none; /* Verbergt het submenu */
+    position: absolute; /* Maakt het submenu absoluut gepositioneerd */
+    top: 100%; /* Plaatst het submenu direct onder het bovenliggende element */
+    left: 0; /* Plaatst het submenu aan de linkerkant van het bovenliggende element */
+    min-width: 150px; /* Stelt de minimale breedte van het submenu in */
+    background-color: #ffffff; /* Stelt de achtergrondkleur van het submenu in op wit */
+    border: 1px solid #cccccc; /* Voegt een grijze rand toe rond het submenu */
+    border-radius: 4px; /* Rondt de hoeken van het submenu af */
+    list-style-type: none; /* Verwijdert de standaard opsommingstekens van het submenu */
+    margin: 0; /* Verwijdert de standaardmarge rond het submenu */
+    padding: 0; /* Verwijdert de standaard padding rond het submenu */
+}
+.submenu li {
+    margin: 0; /* Verwijdert de standaardmarge rond de submenu-items */
+}
+
+.submenu a {
+    padding: 8px 16px; /* Voegt padding toe binnen het submenu ankerelement */
+    white-space: nowrap; /* Zorgt ervoor dat de tekst in het submenu ankerelement niet automatisch naar een nieuwe regel gaat */
+}
+
+.submenu a:hover {
+    background-color: #4c86af; /* Verandert de achtergrondkleur van het submenu ankerelement bij hover */
+}
+
+.mainMenu li:hover > .submenu {
+    display: block; /* Toont het submenu wanneer erover wordt gehoverd */
+}
+
+/* De stijl voor het zoekformulier */
+.contact form, .faq form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/*!* De stijl voor het label van het zoekformulier *!*/
+label {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/*!* De stijl voor de inputvelden van het zoekformulier *!*/
+input[type="text"],input[type="submit"],input[type="reset"], input[type="tel"], input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+/* De stijl voor de 'submit'-knop van het zoekformulier*/
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+    width: 120px;
+}
+input[type="reset"] {
+    background-color: wheat;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+    width: 120px;
+}
+
+input {
+    width: 50%; /* stelt de breedte van het invoerveld in op 70% van de ruimte */
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* De footer wordt uitgerekt over de drie kolommen van het grid en gecentreerd uitgelijnd */
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}

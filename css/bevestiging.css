@@ -1,0 +1,42 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    font-size: 30px;
+    color: darkgreen;
+    margin-left: 1em;
+}
+.true-sign::before {
+    content: "\2714";
+    color: green;
+    font-size: 56px;
+    margin-right: 10px;
+}
+
+#bevestigingInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+#bevestigingInfo  dt{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    grid-column: 1/2;
+}
+#bevestigingInfo  dd{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    grid-column: 2/2;
+    width: 50%;
+}
+#productfiche p{
+    font-size: 26px;
+    color: black;
+    margin-left: 1em;
+}

@@ -1,0 +1,152 @@
+/* Style for the brand filter */
+.filter ul {
+    background-color: peru;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.filter ul li {
+    padding: 0 20px;
+    background: wheat;
+    list-style: none;
+    margin-right: 25px;
+    line-height: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.filter label {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+img {
+    display: none;
+}
+
+/* Hide sections based on selected brand */
+[value="dior"]:checked ~ main article .categorie section:not(.dior),
+[value="boss"]:checked ~ main article .categorie section:not(.boss),
+[value="azzaro"]:checked ~ main article .categorie section:not(.azzaro),
+[value="lacoste"]:checked ~ main article .categorie section:not(.lacoste),
+[value="alle-merken"]:checked ~ main article .categorie section:not(.alle-merken) {
+    display: none;
+}
+
+/* Style for the brand filter labels */
+input#dior:checked ~ main aside ul li label[for="dior"],
+input#boss:checked ~ main aside ul li label[for="boss"],
+input#azzaro:checked ~ main aside ul li label[for="azzaro"],
+input#lacoste:checked ~ main aside ul li label[for="lacoste"],
+input#alle-merken:checked ~ main aside ul li label[for="alle-merken"] {
+    display: initial;
+    text-decoration: underline;
+}
+
+/* Style for the filter and sorting section */
+.filter-sortering {
+    padding: 15px;
+    margin: 30px 15px 15px 15px;
+}
+
+#filters input {
+    padding: 0 20px;
+    list-style: none;
+    margin-right: 25px;
+    line-height: 50px;
+    height: 50px;
+    width: 280px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+#filters button {
+    height: 60px;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    cursor: pointer;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+#sorting select {
+    margin: 15px;
+    border-radius: 10px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    width: 250px;
+    height: 50px;
+}
+
+/* Style for the category title */
+.categorieTitle {
+    margin: 15px; /* Outer margin around the category title */
+    padding: 15px; /* Inner space of the category title */
+}
+
+.categorie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Stijl voor de titel van de categorie */
+.categorieTitle{
+    margin: 15px; /* Buitenmarge rondom de categorie titel */
+    padding: 15px; /* Binnenruimte van de categorie titel */
+}
+
+.categorie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Stijl voor de producten */
+.Product {
+    display: flex; /* Maakt het element flexibel */
+    justify-content: center; /* Centreert de inhoud horizontaal */
+    flex-direction: column; /* Plaatst de inhoud in een kolom */
+    align-items: center; /* Centreert de inhoud verticaal */
+    margin: 30px; /* Buitenmarge rondom het element */
+    padding: 10px ;
+    gap: 10px; /* Ruimte tussen de elementen binnen het flexbox */
+}
+
+/* Stijl voor afbeeldingen */
+img{
+    display: block; /* Maakt het element een blok element */
+    margin: 0 auto; /* Centreert de afbeelding horizontaal */
+}
+
+/* Stijl voor een lijst van varianten */
+.variant-list {
+    display: flex; /* Maakt het element flexibel */
+    list-style-type: none; /* Verwijdert de lijststijl */
+    margin: 0; /* Verwijdert de buitenmarge */
+    padding: 0; /* Verwijdert de binnenruimte */
+}
+
+/* Stijl voor een variant */
+.variant {
+    margin-right: 20px; /* Buitenmarge aan de rechterkant */
+    font-size: 20px; /* Grootte van de tekst */
+}
+
+/* Stijl voor de productprijs */
+.product-price {
+    font-size: 28px; /* Grootte van de tekst */
+    font-weight: bold; /* Vetgedrukt lettertype */
+    color: black; /* Tekstkleur */
+}
+
